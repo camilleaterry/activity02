@@ -8,8 +8,14 @@ import "bootstrap"
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import {movies} from './movies'
+import { MovieList } from './components/movie-list'
+
+// might not need 
 import { FaReact, FaNode, FaDatabase, FaShippingFast } from 'react-icons/fa'
 
+
+/*
 // Example class component
 export class PoweredBy extends React.Component {
   render(){
@@ -20,6 +26,7 @@ export class PoweredBy extends React.Component {
 }
 
 // Example function components
+
 export function MERNDisplay(props) {
   return (
     <div className="course-icons">
@@ -40,5 +47,13 @@ export function Welcome(props) {
     </div>
   )
 }
+*/
 
-ReactDOM.render(<Welcome to="WEB 3430" using="the MERN stack"/>, document.getElementById('main'))
+class Main extends React.Component {
+  render() {
+    return <MovieList movies= {movies} />
+  }
+}
+
+
+ReactDOM.render(<Main/>, document.getElementById('main'))
