@@ -8,10 +8,12 @@ import "bootstrap"
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {movies} from './movies'
+import { movies } from './movies'
 import { MovieList } from './components/movie-list'
 
 // might not need 
+
+
 import { FaReact, FaNode, FaDatabase, FaShippingFast } from 'react-icons/fa'
 
 

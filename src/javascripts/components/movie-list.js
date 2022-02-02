@@ -1,13 +1,11 @@
 import React from 'react'
-import { Movie} from './movie'
-import { isColorSupported } from 'colorette';
+import { Movie } from './movie'
 
 export class MovieList extends React.Component {
-
-    constructor(props){
-        super(props)
-        this.state = {movie: this.props.movies}
-        this.sortMovies = this.sortMovies.bind(this)
+  constructor(props){
+    super(props)
+    this.state = {movies: this.props.movies}
+    this.sortMovies = this.sortMovies.bind(this)
     }
 
     sortMovies(){
@@ -18,8 +16,6 @@ export class MovieList extends React.Component {
          movies: this.state.movies
      })
      }
-
-
     render() {
       return(
         <div className="container">
@@ -37,7 +33,7 @@ export class MovieList extends React.Component {
   
         <main>
           {this.state.movies.map(m => {
-            return <Movie key={m.id} movie={m} />
+            return <Movie key={m.id} movie={m}/>
           })}
         </main>
       </div>    
